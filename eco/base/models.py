@@ -12,7 +12,9 @@ class Video(models.Model):
 
 
 class Subtitle(models.Model):
+    entry_id = models.IntegerField()
     timestamp_vid = models.CharField(max_length=255)
-    vid_phrase = models.TextField()
+    phrase_vid = models.TextField()
+
 # import os
 # os.system('command to execute')
